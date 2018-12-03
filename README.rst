@@ -1,5 +1,3 @@
-.. image:: https://pypip.in/v/mezzanine-page-auth/badge.png
-   :target: https://crate.io/packages/mezzanine-page-auth/
 
 Created by `Simone Dalla <http://twitter.com/simodalla>`_
 
@@ -7,30 +5,22 @@ Created by `Simone Dalla <http://twitter.com/simodalla>`_
 Overview
 ========
 
-Mezzanine Page Auth is `Mezzanine`_ module for add group-level permission to
+Mezzanine Page Auth is a `Mezzanine`_ module for adding group-level permissions to
 Pages.
-
-Full Documentation at: http://mezzanine_page_auth.readthedocs.org/
 
 Dependencies
 ============
 
-Mezzanine Page Auth required:
-
-* `Mezzanine`_ 1.4+, 3.+
+This fork has been tested on...
+- Mezzanine 4.3.1
+- Django 1.11.17
+- Python 2.7.15
 
 Installation
 ============
-The easiest method is to install directly from pypi using `pip`_ by
-running the command below, which will also install the required
-dependencies mentioned above::
+Install from HEAD of this repository::
 
-    $ pip install mezzanine_page_auth
-
-If you prefer, you can download mezzanine-auth-pages and install it directly from
-source::
-
-    $ python setup.py install
+    $ pip install git+https://github.com/rykerls/mezzanine_page_auth.git/#egg=mezzanine_page_auth
 
 Add ``mezzanine_page_auth`` to your ``INSTALLED_APPS`` setting before all
 mezzanine apps::
@@ -44,8 +34,7 @@ mezzanine apps::
         # ...
     )
 
-You will then want to create the necessary tables. If you are using `South`_
-for schema migrations, you'll want to::
+You will then want to create the necessary tables.::
 
     $ python manage.py migrate mezzanine_page_auth
 
