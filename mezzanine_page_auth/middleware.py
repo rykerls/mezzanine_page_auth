@@ -4,7 +4,7 @@ from django.core.exceptions import ImproperlyConfigured
 from django.http import HttpResponseForbidden
 from mezzanine.pages.models import Page
 from .models import PageAuthGroup
-from django.utils.deprecation.MiddlewareMixin
+from django.utils.deprecation import MiddlewareMixin
 
 class PageAuthMiddleware(MiddlewareMixin):
     def process_request(self, request):
