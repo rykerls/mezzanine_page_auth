@@ -4,9 +4,9 @@ from django.core.exceptions import ImproperlyConfigured
 from django.http import HttpResponseForbidden
 from mezzanine.pages.models import Page
 from .models import PageAuthGroup
+from django.utils.deprecation.MiddlewareMixin
 
-
-class PageAuthMiddleware(object):
+class PageAuthMiddleware(MiddlewareMixin):
     def process_request(self, request):
         # AuthenticationMiddleware is required so that request.user exists.
         if not hasattr(request, 'user'):
