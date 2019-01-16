@@ -1,12 +1,13 @@
-
-Created by `Simone Dalla <http://twitter.com/simodalla>`_
-
 ========
 Overview
 ========
 
 Mezzanine Page Auth is a `Mezzanine`_ module for adding group-level permissions to
 Pages.
+
+Created by `Simone Dalla <http://twitter.com/simodalla>`_
+
+This repository contains fixes so that mezzanine_page_auth will work with more modern versions of Mezzanine and Django.
 
 Dependencies
 ============
@@ -57,13 +58,21 @@ Template Context Processors
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Enable ``page_auth`` template context processors in your settings module as follows::
 
-    TEMPLATE_CONTEXT_PROCESSORS = (
-        # ...
-        "mezzanine_page_auth.context_processors.page_auth",
-    )
+	TEMPLATES = [
+	   {
+			"BACKEND": "django.template.backends.django.DjangoTemplates",
+			"DIRS": [
+				os.path.join(PROJECT_ROOT, "templates")
+			],
+			"OPTIONS": {
+				"context_processors": [
+				#...
+				"mezzanine_page_auth.context_processors.page_auth",
+				]
+	]
 
-The order of ``MIDDLEWARE_CLASSES`` is important. You should include the
-``PageAuthMiddleware`` middleware after other Mezzanine middlewares in the list.
+Add ``mezzanine_page_auth.context_processors.page_auth`` to the end of the ``context_processors`` list.
+
 
 Mezzanine Settings
 ~~~~~~~~~~~~~~~~~~
