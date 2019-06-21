@@ -2,13 +2,7 @@
 
 Installation
 ============
-The easiest method is to install directly from pypi using `pip`_ by
-running the command below, which will also install the required
-dependencies mentioned above::
-
-    $ pip install mezzanine-auth-pages
-
-If you prefer, you can download mezzanine-auth-pages and install it directly from
+You can download mezzanine-auth-pages and install it directly from
 source::
 
     $ python setup.py install
@@ -25,8 +19,7 @@ mezzanine apps::
         # ...
     )
 
-You will then want to create the necessary tables. If you are using `South`_
-for schema migrations, you'll want to::
+You will then want to create the necessary tables.::
 
     $ python manage.py migrate mezzanine_page_auth
 

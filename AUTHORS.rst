@@ -2,13 +2,11 @@
 Credits
 =======
 
-Development Lead
+Maintainer
+----------
+* Ryker Schwartzenberger <https://github.com/rykerls>
+
+Original Project
 ----------------
+* mezzanine_page_auth <https://github.com/simodalla/mezzanine_page_auth>
 
-* Simone Dalla <simodalla@gmail.com>
-
-Contributors
-------------
-
-* gelliravi <https://github.com/gelliravi>
-* Aidamir Lovpache <aidamatrix@gmail.com>

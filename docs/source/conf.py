@@ -41,7 +41,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Mezzanine Page Auth'
-copyright = u'2013, Simone Dalla'
+copyright = u'2019, Ryker Schwartzenberger. 2013, Simone Dalla'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -184,7 +184,7 @@ latex_elements = {
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
   ('index', 'MezzaninePageAuth.tex', u'Mezzanine Page Auth Documentation',
-   u'Simone Dalla', 'manual'),
+   u'Ryker Schwartzenberger', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
@@ -214,7 +214,7 @@ latex_documents = [
 # (source start file, name, description, authors, manual section).
 man_pages = [
     ('index', 'mezzaninepageauth', u'Mezzanine Page Auth Documentation',
-     [u'Simone Dalla'], 1)
+     [u'Ryker Schwartzenberger'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -228,7 +228,7 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
   ('index', 'MezzaninePageAuth', u'Mezzanine Page Auth Documentation',
-   u'Simone Dalla', 'MezzaninePageAuth', 'One line description of project.',
+   u'Ryker Schwartzenberger', 'MezzaninePageAuth', 'One line description of project.',
    'Miscellaneous'),
 ]
 

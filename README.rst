@@ -5,9 +5,9 @@ Overview
 Mezzanine Page Auth is a `Mezzanine`_ module for adding group-level permissions to
 Pages.
 
-Created by `Simone Dalla <http://twitter.com/simodalla>`_
+A fork of `Mezzanine_Page_Auth`_
 
-This repository contains fixes so that mezzanine_page_auth will work with more modern versions of Mezzanine and Django.
+This repository contains fixes to make mezzanine_page_auth compatible with more modern versions of Mezzanine and Django.
 
 Dependencies
 ============
@@ -21,7 +21,7 @@ Installation
 ============
 Install from HEAD of this repository::
 
-    $ pip install git+https://github.com/rykerls/mezzanine_page_auth.git/#egg=mezzanine_page_auth
+    $ pip install git+https://github.com/rykerls/mezzanine_page_auth.git#egg=mezzanine_page_auth
 
 Add ``mezzanine_page_auth`` to your ``INSTALLED_APPS`` setting before all
 mezzanine apps::
@@ -99,6 +99,7 @@ Mezzanine Page Auth is `BSD licensed`_.
 
 .. GENERAL LINKS
 
+.. _`Mezzanine_Page_Auth`: https://github.com/simodalla/mezzanine_page_auth
 .. _`Django`: http://djangoproject.com/
 .. _`Django Code of Conduct`: https://www.djangoproject.com/conduct/
 .. _`BSD licensed`: http://www.linfo.org/bsdlicense.html

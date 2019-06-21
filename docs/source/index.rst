@@ -14,9 +14,8 @@ Mezzanine Page Auth is Mezzanine module for add group-level permission to Pages.
 Links
 -----
 
-* Documentation: http://mezzanine_page_auth.readthedocs.org/
-* Official repository: https://github.com/simodalla/mezzanine_page_auth/
-* Package: https://pypi.python.org/pypi/mezzanine-page-auth/
+* This repository: https://github.com/rykerls/mezzanine_page_auth/
+* Original (forked) repository: https://github.com/simodalla/mezzanine_page_auth/
 
 License
 =======
